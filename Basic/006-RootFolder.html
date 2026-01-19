@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root Folder</title>
+    <meta name="description" content="Explicación clara y breve del porqué de cada elemento en la carpeta raíz de un proyecto web.">
+</head>
+<body>
+    <header>
+        <h1>¿Qué es la carpeta raíz (root)?</h1>
+        <p>La <strong>carpeta raíz</strong> es la carpeta principal de un proyecto web. Todo lo que ve el navegador empieza aquí.</p>
+        <p>Piénsala como la <em>puerta de entrada</em> de tu sitio.</p>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Estructura que vamos a usar</h2>
+            <p>En este curso básico trabajaremos solo con la siguiente estructura:</p>
+<pre><code>root/
+├─ index.html
+├─ assets/
+│  ├─ css/
+│  ├─ js/
+│  └─ img/
+└─ pages/
+</code></pre>
+            <p>No es la única forma de organizar un proyecto, pero es una forma <strong>simple, clara y correcta</strong> para empezar.</p>
+        </section>
+
+        <section>
+            <h2>1. <code>index.html</code></h2>
+            <p>Es el archivo <strong>más importante</strong> del proyecto.</p>
+            <ul>
+                <li>Cuando escribes un dominio (ejemplo: <code>www.miweb.com</code>), el navegador busca automáticamente <code>index.html</code>.</li>
+                <li>Por eso siempre vive en la carpeta raíz.</li>
+            </ul>
+            <p><strong>¿Qué contiene?</strong></p>
+            <ul>
+                <li>La estructura principal del sitio.</li>
+                <li>Los enlaces a los archivos CSS y JavaScript.</li>
+                <li>El contenido inicial que ve el usuario.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. <code>assets/</code></h2>
+            <p>La carpeta <code>assets</code> guarda los <strong>recursos</strong> que usa la página, pero que no son páginas HTML.</p>
+            <p>Sirve para mantener el proyecto ordenado y fácil de entender.</p>
+
+            <article>
+                <h3>2.1 <code>assets/css/</code></h3>
+                <p>Aquí van los archivos CSS.</p>
+                <ul>
+                    <li>El CSS se encarga de los colores, tamaños y estilos.</li>
+                    <li>Separar CSS de HTML hace el código más limpio.</li>
+                </ul>
+                <pre><code>&lt;link rel="stylesheet" href="/assets/css/style.css"&gt;</code></pre>
+            </article>
+
+            <article>
+                <h3>2.2 <code>assets/js/</code></h3>
+                <p>Aquí van los archivos JavaScript.</p>
+                <ul>
+                    <li>JavaScript permite que la página tenga interacción.</li>
+                    <li>Ejemplo: botones, validaciones, mensajes.</li>
+                </ul>
+                <pre><code>&lt;script src="/assets/js/main.js"&gt;&lt;/script&gt;</code></pre>
+            </article>
+
+            <article>
+                <h3>2.3 <code>assets/img/</code></h3>
+                <p>Aquí se guardan las imágenes del sitio.</p>
+                <ul>
+                    <li>Logos, fotos, íconos, banners.</li>
+                    <li>Tenerlas juntas evita perder archivos.</li>
+                </ul>
+                <pre><code>&lt;img src="/assets/img/logo.png" alt="Logo"&gt;</code></pre>
+            </article>
+        </section>
+
+        <section>
+            <h2>3. <code>pages/</code></h2>
+            <p>La carpeta <code>pages</code> contiene otras páginas HTML del sitio.</p>
+            <p>Ejemplos comunes:</p>
+            <ul>
+                <li><code>about.html</code> → información del sitio</li>
+                <li><code>contact.html</code> → formulario de contacto</li>
+            </ul>
+            <p>Esto evita llenar la carpeta raíz con muchos archivos.</p>
+        </section>
+
+        <section>
+            <h2>Idea clave para recordar</h2>
+            <ul>
+                <li><strong>index.html</strong> → página principal</li>
+                <li><strong>assets</strong> → recursos (CSS, JS, imágenes)</li>
+                <li><strong>pages</strong> → otras páginas HTML</li>
+            </ul>
+            <p>Si entiendes esto, ya entiendes la base de cualquier proyecto web.</p>
+        </section>
+    </main>
+
+    <footer style="background-color: beige;">
+        <center><p>Curso de HTML — Nivel básico | Carpeta raíz</p></center>
+    </footer>
+</body>
+</html>
