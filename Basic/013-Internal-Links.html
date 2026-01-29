@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enlaces internos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Enlaces a otras páginas del sitio</h1>
+        <p>Los enlaces internos permiten navegar entre las páginas de tu propio sitio web.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Estructura del proyecto</h2>
+            <p>Este ejemplo asume la siguiente estructura:</p>
+            
+            <pre>
+folder/
+├─ index.html
+├─ pages/
+│ ├─ about.html
+│ └─ contact.html
+└─ assets/
+            </pre>
+        </section>
+
+
+        <section>
+            <h2>Ejemplos de enlaces</h2>
+            <ul>
+                <!-- Enlace a un archivo dentro de la carpeta pages -->
+                <li><a href="pages/about.html">Ir a About</a></li>
+                <li><a href="pages/contact.html">Ir a Contact</a></li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>Uso de ../</h2>
+            <p>
+            Cuando un archivo está en una carpeta superior, se usa <code>../</code> para subir un nivel.
+            </p>            
+            <p>
+            Ejemplo desde <code>pages/about.html</code> para volver al inicio:
+            </p>
+            <pre>
+&lt;a href="../index.html"&gt;Volver al inicio&lt;/a&gt;
+            </pre>
+        </section>
+
+
+        <section>
+            <h2>Errores comunes</h2>
+            <ul>
+                <li>Escribir mal el nombre del archivo</li>
+                <li>Olvidar la carpeta donde está el archivo</li>
+                <li>Usar mayúsculas diferentes en rutas</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer style="background-color: beige;">
+        <center><p>Curso de HTML — Nivel básico</p></center>
+    </footer>
+</body>
+</html>
