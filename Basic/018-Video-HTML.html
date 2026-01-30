@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Video en HTML</title>
+</head>
+
+<body>
+    <header>
+        <h1>Video en HTML</h1>
+        <p>HTML permite reproducir videos directamente en el navegador usando el elemento <code>video</code>.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Ejemplo básico</h2>
+            <p>Un video simple usando el atributo <code>src</code>:</p>
+
+<pre>
+&lt;video src="video.mp4" controls&gt;
+    Tu navegador no admite el elemento video
+&lt;/video&gt;
+</pre>
+        </section>
+
+        <section>
+            <h2>Formatos de video</h2>
+            <p>Los formatos más usados en la web son:</p>
+            <ul>
+                <li><strong>MP4</strong>: el más compatible</li>
+                <li><strong>WebM</strong>: buena calidad y menor peso</li>
+                <li><strong>OGG</strong>: menos común</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Atributos importantes</h2>
+            <ul>
+                <li><code>controls</code>: muestra los controles del video</li>
+                <li><code>autoplay</code>: reproduce el video automáticamente</li>
+                <li><code>muted</code>: inicia el video sin sonido</li>
+                <li><code>loop</code>: repite el video</li>
+                <li><code>poster</code>: imagen antes de reproducir</li>
+                <li><code>width</code> / <code>height</code>: tamaño del video</li>
+                <li><code>preload</code>: controla la carga inicial</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Uso de múltiples formatos</h2>
+            <p>Para mayor compatibilidad, se recomienda usar varias fuentes con <code>source</code>.</p>
+
+<pre>
+&lt;video controls&gt;
+    &lt;source src="videos/video.mp4" type="video/mp4"&gt;
+    &lt;source src="videos/video.webm" type="video/webm"&gt;
+    &lt;source src="videos/video.ogg" type="video/ogg"&gt;
+    Tu navegador no admite el elemento video
+&lt;/video&gt;
+</pre>
+        </section>
+
+        <section>
+            <h2>Subtítulos</h2>
+            <p>El elemento <code>track</code> permite agregar subtítulos al video.</p>
+
+<pre>
+&lt;track src="videos/subtitulos.vtt" kind="subtitles" srclang="es" label="Español"&gt;
+</pre>
+        </section>
+
+
+        <section>
+            <h2>Qué debes recordar</h2>
+            <ul>
+                <li>Siempre usa <code>controls</code> en ejemplos básicos</li>
+                <li>MP4 es el formato más compatible</li>
+                <li>Usa <code>poster</code> para mejorar la experiencia</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer style="background-color: beige;">
+        <center><p>Curso de HTML — Nivel básico</p></center>
+    </footer>
+</body>
+</html>
