@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Imágenes en HTML</title>
+</head>
+
+<body>
+    <header>
+        <h1>Imágenes en HTML</h1>
+        <p>HTML permite mostrar imágenes usando principalmente el elemento <code>img</code>.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>El elemento img</h2>
+            <p>
+            El elemento <code>img</code> se usa para insertar una imagen en la página. No tiene etiqueta de cierre.
+            </p>
+
+<pre>
+&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;
+</pre>
+
+            <ul>
+                <li><strong>src</strong>: ruta del archivo de imagen</li>
+                <li><strong>alt</strong>: texto alternativo si la imagen no carga</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ejemplo con imagen SVG</h2>
+            <p>
+            Las imágenes SVG son vectoriales y no pierden calidad al cambiar de tamaño.
+            </p>
+
+<pre>
+&lt;img src="imagen.svg" alt="Figura circular"&gt;
+</pre>
+        </section>
+
+        <section>
+            <h2>El elemento picture</h2>
+            <p>
+            El elemento <code>picture</code> permite usar diferentes imágenes según el tamaño de la pantalla.
+            </p>
+
+<pre>
+&lt;picture&gt;
+    &lt;source media="(min-width: 1200px)" srcset="imagen-grande.jpg"&gt;
+    &lt;source media="(min-width: 800px)" srcset="imagen-mediana.jpg"&gt;
+    &lt;source media="(min-width: 450px)" srcset="imagen-pequena.jpg"&gt;
+    &lt;img src="imagen.jpg" alt="Imagen de ejemplo"&gt;
+&lt;/picture&gt;
+</pre>
+
+            <p>
+            El navegador elige automáticamente la imagen más adecuada.
+            </p>
+        </section>
+
+        <section>
+            <h2>Qué debes recordar</h2>
+            <ul>
+                <li><code>img</code> es el elemento principal para imágenes</li>
+                <li><code>alt</code> siempre debe estar presente</li>
+                <li><code>picture</code> se usa cuando necesitas imágenes adaptables</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer style="background-color: beige;">
+        <center><p>Curso de HTML — Nivel básico</p></center>
+    </footer>
+</body>
+</html>
