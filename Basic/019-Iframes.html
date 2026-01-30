@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iframes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Iframes en HTML</h1>
+        <p>Un <code>iframe</code> permite mostrar otra página web dentro de la nuestra.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Ejemplo básico</h2>
+            <p>El siguiente iframe carga un sitio externo:</p>
+
+            <iframe
+                name="myFrame"
+                src="https://www.geogebra.com"
+                width="500"
+                height="700"
+                frameborder="0">
+            </iframe>
+        </section>
+
+        <section>
+            <h2>Cambiar el contenido del iframe</h2>
+            <p>Usando enlaces con el atributo <code>target</code>, podemos cambiar el contenido del iframe.</p>
+
+            <p>
+                <a href="https://www.geogebra.com" target="myFrame">Abrir GeoGebra</a> |
+                <a href="https://www.desmos.com" target="myFrame">Abrir Desmos</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Atributos importantes</h2>
+            <ul>
+                <li><code>src</code>: URL del contenido a mostrar</li>
+                <li><code>width</code> / <code>height</code>: tamaño del iframe</li>
+                <li><code>name</code>: permite usar <code>target</code> desde enlaces</li>
+                <li><code>frameborder</code>: define el borde (obsoleto, pero común)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Qué debes recordar</h2>
+            <ul>
+                <li>No todos los sitios permiten ser cargados en iframes</li>
+                <li>El iframe muestra contenido externo, no lo copia</li>
+                <li>Se usa para mapas, videos o herramientas externas</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer style="background-color: beige;">
+        <center><p>Curso de HTML — Nivel básico</p></center>
+    </footer>
+</body>
+</html>
