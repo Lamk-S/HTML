@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inserción de Audio</title>
+</head>
+
+<body>
+    <header>
+        <h1>Inserción de audio en HTML</h1>
+        <p>Uso de la etiqueta <code>&lt;audio&gt;</code> y sus atributos principales.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formatos compatibles</h2>
+            <ul>
+                <li>mp3</li>
+                <li>wav</li>
+                <li>ogg</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Atributos comunes</h2>
+            <ul>
+                <li>autoplay</li>
+                <li>controls</li>
+                <li>loop</li>
+                <li>muted</li>
+                <li>preload</li>
+                <li>src / source</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ejemplo práctico</h2>
+            <audio controls preload="metadata">
+                <source src="./Recursos/audio/DeepHouse-Loop.mp3" type="audio/mpeg">
+                Tu navegador no soporta la etiqueta <code>audio</code>.
+            </audio>
+        </section>
+    </main>
+
+    <footer style="background-color: beige;">
+        <center><p>Curso de HTML — Nivel básico</p></center>
+    </footer>
+</body>
+</html>
