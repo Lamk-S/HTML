@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="./style/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>Formularios y elementos de formularios</h1>
+        <p>Uso práctico de la etiqueta <code>&lt;form&gt;</code> y sus elementos principales.</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Elementos usados en formularios</h2>
+            <ul>
+                <li><code>form</code></li>
+                <li><code>input</code></li>
+                <li><code>label</code></li>
+                <li><code>select</code></li>
+                <li><code>textarea</code></li>
+                <li><code>button</code></li>
+                <li><code>fieldset</code></li>
+                <li><code>legend</code></li>
+                <li><code>datalist</code></li>
+                <li><code>option</code></li>
+                <li><code>optgroup</code></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Estructura básica de un formulario</h2>
+            <form action="procesar.php" method="post" autocomplete="on">
+                <label for="txtNombre">Nombre:</label>
+                <input type="text" id="txtNombre" name="txtNombre">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Formulario completo de ejemplo</h2>
+            <form method="get">
+
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Melvin">&nbsp;&nbsp;
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="López">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos demográficos</legend>
+                    <label for="genero">Género:</label>
+                    <select name="genero" id="genero">
+                        <option value="" selected disabled>Seleccione una opción</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="no-decir">Prefiero no decir</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferencias y descripción</legend>
+
+                    <label for="personalidad">Descripción personal (máx. 180 caracteres):</label><br>
+                    <textarea id="personalidad" name="personalidad" maxlength="180" cols="30" rows="8"></textarea>
+                    <br><br>
+
+                    <label for="colores">Colores favoritos:</label><br>
+                    <select id="colores" name="colores[]" size="5" multiple>
+                        <option value="amarillo">Amarillo</option>
+                        <option value="azul">Azul</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="verde">Verde</option>
+                        <option value="naranja">Naranja</option>
+                    </select>
+                    <br><br>
+
+                    <label for="nombreFavorito">Nombre favorito:</label><br>
+                    <select id="nombreFavorito" name="nombreFavorito">
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <optgroup label="Hombres">
+                            <option value="Piero">Piero</option>
+                            <option value="Carlos">Carlos</option>
+                            <option value="Pablo">Pablo</option>
+                        </optgroup>
+                        <optgroup label="Mujeres">
+                            <option value="Angie">Angie</option>
+                            <option value="Beatriz">Beatriz</option>
+                            <option value="Estela">Estela</option>
+                        </optgroup>
+                    </select>
+                    <br><br>
+
+                    <label for="ciudad">Capital latinoamericana preferida:</label>
+                    <input list="ciudades" id="ciudad" name="ciudad">
+                    <datalist id="ciudades">
+                        <option value="Lima">
+                        <option value="Bogotá">
+                        <option value="Quito">
+                        <option value="Buenos Aires">
+                        <option value="Montevideo">
+                    </datalist>
+                </fieldset>
+
+                <button type="reset">Borrar</button>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer style="background-color: beige;">
+        <center><p>Curso de HTML — Nivel básico</p></center>
+    </footer>
+</body>
+</html>
