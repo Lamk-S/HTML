@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tablas</title>
+    <link rel="stylesheet" href="./style/table.css">
+</head>
+
+<body>
+    <header>
+        <h1>Elementos para el uso de tablas</h1>
+        <p>Ejemplos prácticos de la etiqueta <code>&lt;table&gt;</code> y sus elementos.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Tabla básica</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Edad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Melvin</td>
+                        <td>López</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>LamkDev</td>
+                        <td>Lamk-S</td>
+                        <td>24</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Celdas que abarcan múltiples columnas (colspan)</h2>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th colspan="2">Apellidos</th>
+                </tr>
+                <tr>
+                    <td>Angie</td>
+                    <td>Castillo</td>
+                    <td>Alva</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Celdas que abarcan múltiples filas (rowspan)</h2>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <td>Beatriz</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Apellidos</th>
+                    <td>Castillo</td>
+                </tr>
+                <tr>
+                    <td>Alva</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Combinación de rowspan y colspan</h2>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td colspan="2">2</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Uso de caption</h2>
+            <table>
+                <caption>Listado de videojuegos</caption>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Nombre</th>
+                </tr>
+                <tr>
+                    <td>Carreras</td>
+                    <td>Horizon 5</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    
+    <footer style="background-color: beige;">
+        <center><p>Curso de HTML — Nivel básico</p></center>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+table {
+    width: 30%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+th, td {
+   padding: 5px;
+   width: 50%;
+   border: 1px solid black;
+   text-align: left;
+}
