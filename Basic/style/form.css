@@ -1,6 +1,5 @@
 form {
-    border: 1px solid black;
-    padding: 5px;
+    padding: 10px;
 }
 
 fieldset,
@@ -9,4 +8,8 @@ select,
 textarea,
 button {
     border: 1px solid black;
+}
+
+fieldset {
+    margin-top: 10px;
 }

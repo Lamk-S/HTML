@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elemento input y tipos de entrada</title>
+    <link rel="stylesheet" href="./style/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>Elemento &lt;input&gt; y formas de ingreso de datos</h1>
+        <p>Ejemplos prácticos de los distintos tipos de <code>input</code> en HTML.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Tipos de input disponibles</h2>
+
+            <table>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>button</li>
+                            <li>checkbox</li>
+                            <li>color</li>
+                            <li>date</li>
+                            <li>datetime-local</li>
+                            <li>email</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>file</li>
+                            <li>hidden</li>
+                            <li>image</li>
+                            <li>month</li>
+                            <li>number</li>
+                            <li>password</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>radio</li>
+                            <li>range</li>
+                            <li>reset</li>
+                            <li>search</li>
+                            <li>submit</li>
+                            <li>tel</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Ejemplos de uso</h2>
+
+            <form method="get">
+                <fieldset>
+                    <legend>Entradas de texto</legend>
+
+                    <label for="nombreApellido">Nombre y apellido:</label>
+                    <input
+                        type="text"
+                        id="nombreApellido"
+                        name="nombreApellido"
+                        placeholder="Melvin López"
+                    >
+
+                    <br><br>
+
+                    <label for="clave">Contraseña:</label>
+                    <input
+                        type="password"
+                        id="clave"
+                        name="clave"
+                        required
+                    >
+
+                    <br><br>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                    >
+
+                    <br><br>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="900 000 000"
+                    >
+                </fieldset>
+
+                <fieldset>
+                    <legend>Entradas numéricas y búsqueda</legend>
+
+                    <label for="cantidad">Cantidad (1-10):</label>
+                    <input
+                        type="number"
+                        id="cantidad"
+                        name="cantidad"
+                        min="1"
+                        max="10"
+                    >
+
+                    <br><br>
+
+                    <label for="cantidadStep">Cantidad (1-21, múltiplos de 3):</label>
+                    <input
+                        type="number"
+                        id="cantidadStep"
+                        name="cantidadStep"
+                        min="0"
+                        max="21"
+                        step="3"
+                    >
+
+                    <br><br>
+
+                    <label for="busqueda">Buscar:</label>
+                    <input
+                        type="search"
+                        id="busqueda"
+                        name="busqueda"
+                    >
+                    <button>Buscar</button>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Radio buttons</legend>
+
+                    <input type="radio" id="hombre" name="genero" value="hombre">
+                    <label for="hombre">Hombre</label>
+                    <br>
+
+                    <input type="radio" id="mujer" name="genero" value="mujer">
+                    <label for="mujer">Mujer</label>
+                    <br>
+
+                    <input type="radio" id="noDecir" name="genero" value="noDecir">
+                    <label for="noDecir">Prefiero no decir</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Checkbox</legend>
+
+                    <p>Sirven para selección múltiple</p>
+
+                    <input type="checkbox" id="op1" name="op1">
+                    <label for="op1">Opción 1</label>
+                    <br>
+
+                    <input type="checkbox" id="op2" name="op2">
+                    <label for="op2">Opción 2</label>
+                    <br>
+
+                    <input type="checkbox" id="op3" name="op3">
+                    <label for="op3">Opción 3</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Otros tipos</legend>
+
+                    <label for="color">Color favorito:</label>
+                    <input type="color" id="color" name="color">
+
+                    <br><br>
+
+                    <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+
+                    <br><br>
+
+                    <label for="fechaHora">Fecha y hora:</label>
+                    <input type="datetime-local" id="fechaHora" name="fechaHora">
+
+                    <br><br>
+
+                    <label for="mesAnio">Mes y año:</label>
+                    <input type="month" id="mesAnio" name="mesAnio">
+
+                    <br><br>
+
+                    <label for="rango">Rango (10–20):</label>
+                    <input type="range" id="rango" name="rango" min="10" max="20">
+
+                    <br><br>
+
+                    <label for="archivo">Archivo:</label>
+                    <input type="file" id="archivo" name="archivo">
+
+                    <input type="hidden" name="campoOculto" value="valor">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Botones</legend>
+
+                    <input type="button" value="Botón">
+                    <input type="reset" value="Resetear">
+                    <input type="submit" value="Enviar">
+                    <input
+                        type="image"
+                        src="./resources/img/boton-de-enviar.png"
+                        alt="Enviar"
+                        height="32"
+                    >
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    <footer style="background-color: beige;">
+        <center><p>Curso de HTML — Nivel básico</p></center>
+    </footer>
+</body>
+</html>
