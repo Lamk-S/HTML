@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elementos semánticos en HTML</title>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <h1>Elementos semánticos en HTML</h1>
+        <p>Ejemplos prácticos de etiquetas semánticas</p>
+    </header>
+
+    <!-- ================= NAV ================= -->
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Artículos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+        <!-- SECTION: explicación general -->
+        <section>
+            <h2>¿Qué son los elementos semánticos?</h2>
+            <p>
+                Son etiquetas que describen claramente el propósito del contenido
+                que envuelven, tanto para el navegador como para los motores de búsqueda.
+            </p>
+        </section>
+
+        <!-- ARTICLE -->
+        <article>
+            <h2>Artículo de ejemplo</h2>
+            <p>
+                Este es un contenido independiente y autocontenido, como una noticia
+                o una entrada de blog.
+            </p>
+
+            <!-- ASIDE dentro de ARTICLE -->
+            <aside>
+                <p><strong>Nota:</strong> Información relacionada pero no esencial.</p>
+            </aside>
+
+            <!-- SECTION dentro de ARTICLE -->
+            <section>
+                <h3>Sección interna</h3>
+                <p>Subtema relacionado con el artículo.</p>
+            </section>
+
+            <section>
+                <h3>Otra sección</h3>
+                <p>Contenido adicional del mismo tema.</p>
+            </section>
+        </article>
+
+        <!-- ASIDE principal -->
+        <aside>
+            <h2>Contenido relacionado</h2>
+            <p>Publicidad, enlaces o información secundaria.</p>
+        </aside>
+
+        <!-- SECTION con ARTICLE -->
+        <section>
+            <h2>Sección temática</h2>
+            <article>
+                <h3>Artículo dentro de sección</h3>
+                <p>Ejemplo de estructura jerárquica correcta.</p>
+            </article>
+        </section>
+
+        <!-- DETAILS / SUMMARY -->
+        <section>
+            <h2>Detalles bajo demanda</h2>
+            <details>
+                <summary>Lima, Perú</summary>
+                <p>
+                    Lima, capital del Perú, es una ciudad costera con más de
+                    10 millones de habitantes.
+                </p>
+            </details>
+        </section>
+
+        <!-- FIGURE -->
+        <section>
+            <h2>Contenido gráfico</h2>
+            <figure>
+                <img src="" alt="Imagen de ejemplo">
+                <figcaption>Descripción de la imagen</figcaption>
+            </figure>
+        </section>
+
+        <!-- MARK -->
+        <section>
+            <p>
+                En este texto se resalta <mark>esta parte importante</mark>
+                usando la etiqueta <code>mark</code>.
+            </p>
+        </section>
+
+        <!-- TIME -->
+        <section>
+            <p>
+                El <time datetime="2027-01-01">1 de enero de 2027</time>
+                celebraremos un nuevo año.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer style="background-color: beige;">
+        <center>
+            <p>Curso de HTML — Nivel básico</p>
+        </center>
+    </footer>
+
+</body>
+</html>
