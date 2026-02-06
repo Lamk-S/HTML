@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website Structure</title>
+</head>
+<body>
+
+    <!-- Header: navegación, branding y banner -->
+    <header id="site-header">
+
+        <section id="top-bar">
+            <nav id="main-navigation" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./pages/perfil.html">¿Quién soy?</a></li>
+                    <li><a href="./pages/trabajo.html">Mi trabajo</a></li>
+                    <li><a href="./pages/clases.html">Mis clases</a></li>
+                    <li><a href="./pages/contacto.html">Contácteme</a></li>
+                </ul>
+            </nav>
+
+            <h1 id="site-logo">
+                <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" 
+                    alt="Anonimo - Desarrollo de Software"
+                >
+            </h1>
+        </section>
+
+        <section id="hero-banner">
+            <h2>Desarrollo de Software y Creación Digital</h2>
+            <p>
+                Análisis, diseño y construcción de soluciones digitales aplicando
+                buenas prácticas de ingeniería de software.
+            </p>
+        </section>
+
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="main-content">
+
+        <!-- Perfil -->
+        <article id="profile-section">
+
+            <section id="profile-description">
+                <h2>Sobre mí</h2>
+                <p>
+                    Ingeniero orientado al desarrollo web y análisis de sistemas,
+                    con enfoque en estructuras limpias, código mantenible y
+                    pensamiento lógico aplicado.
+                </p>
+                <img 
+                    src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1"
+                    alt="Fotografía profesional de desarrollador"
+                    width="300"
+                >
+            </section>
+
+            <aside id="skills-summary">
+                <h2>Habilidades técnicas</h2>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>HTML5 Semántico</td>
+                            <td>CSS Fundamentals</td>
+                            <td>JavaScript Básico</td>
+                        </tr>
+                        <tr>
+                            <td>Git & GitHub</td>
+                            <td>Estructuras Web</td>
+                            <td>Accesibilidad Web</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>Django</td>
+                            <td>APIs REST</td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                            <td>Modelado de Datos</td>
+                            <td>Power BI</td>
+                        </tr>
+                        <tr>
+                            <td>Análisis de Requisitos</td>
+                            <td>Documentación Técnica</td>
+                            <td>Buenas Prácticas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
+
+        </article>
+
+        <!-- Portafolio -->
+        <article id="portfolio-section">
+            <h2>Portafolio</h2>
+
+            <section id="project-gallery">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Proyecto web 1" width="250">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="Proyecto web 2" width="250">
+                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4" alt="Proyecto web 3" width="250">
+                <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd" alt="Proyecto web 4" width="250">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Proyecto web 5" width="250">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Proyecto web 6" width="250">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" alt="Proyecto web 7" width="250">
+                <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="Proyecto web 8" width="250">
+            </section>
+        </article>
+
+        <!-- Proyecto destacado -->
+        <article id="featured-project">
+            <h2>Proyecto destacado</h2>
+            <p>
+                Sistema web enfocado en la gestión de productos, aplicando
+                arquitectura MVC, validación de datos y buenas prácticas
+                de desarrollo.
+            </p>
+            <video 
+                src="https://www.w3schools.com/html/mov_bbb.mp4" 
+                controls
+                width="400"
+            ></video>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="site-footer">
+
+        <section id="contact-section">
+            <h2>Contacto</h2>
+            <p>
+                ¿Tienes un proyecto o idea? Conversemos y llevémosla a producción.
+            </p>
+
+            <section id="contact-form">
+                <form action="" method="post">
+                    <label for="full-name">Nombre</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Nombres y apellidos">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com">
+
+                    <label for="city">Ciudad</label>
+                    <input type="text" id="city" name="city" placeholder="Ciudad de residencia">
+
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </section>
+
+        <section id="footer-bottom">
+
+            <section id="copyright">
+                <p>Anonimo · example@example.com· Trujillo, Perú</p>
+            </section>
+
+            <section id="social-links">
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">TikTok</a></li>
+                </ul>
+            </section>
+
+        </section>
+
+    </footer>
+
+</body>
+</html>
