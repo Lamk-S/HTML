@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course - HTML Structure</title>
+</head>
+<body>
+
+    <!-- Header: identidad y navegación -->
+    <header id="site-header">
+
+        <h1 id="course-title">Curso de Desarrollo Web</h1>
+
+        <nav id="main-navigation" aria-label="Navegación principal">
+            <ul>
+                <li><a href="#course-overview">Descripción</a></li>
+                <li><a href="#course-details">Información</a></li>
+                <li><a href="#course-syllabus">Temario</a></li>
+                <li><a href="#instructor">Instructor</a></li>
+                <li><a href="#enrollment">Inscripción</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="main-content">
+
+        <!-- Presentación del curso -->
+        <section id="course-overview">
+            <h2>Descripción del curso</h2>
+            <p>
+                Este curso introduce los fundamentos del desarrollo web,
+                enfocándose en buenas prácticas, estructura semántica
+                y pensamiento lógico aplicado.
+            </p>
+        </section>
+
+        <!-- Información clave del curso -->
+        <section id="course-details">
+            <h2>Información general</h2>
+
+            <dl>
+                <dt>Duración</dt>
+                <dd>8 semanas</dd>
+
+                <dt>Nivel</dt>
+                <dd>Básico</dd>
+
+                <dt>Modalidad</dt>
+                <dd>Online</dd>
+
+                <dt>Requisitos</dt>
+                <dd>Conocimientos básicos de computación</dd>
+            </dl>
+        </section>
+
+        <!-- Temario -->
+        <section id="course-syllabus">
+            <h2>Temario del curso</h2>
+
+            <article>
+                <h3>Módulo 1: Fundamentos de la Web</h3>
+                <ul>
+                    <li>¿Qué es HTML?</li>
+                    <li>Estructura básica de un documento</li>
+                    <li>Buenas prácticas iniciales</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Módulo 2: HTML Semántico</h3>
+                <ul>
+                    <li>Etiquetas semánticas</li>
+                    <li>Jerarquía de encabezados</li>
+                    <li>Errores comunes</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Módulo 3: Formularios y Contenido</h3>
+                <ul>
+                    <li>Formularios HTML</li>
+                    <li>Tablas de datos</li>
+                    <li>Accesibilidad básica</li>
+                </ul>
+            </article>
+
+        </section>
+
+        <!-- Instructor -->
+        <section id="instructor">
+            <h2>Instructor</h2>
+
+            <figure>
+                <img 
+                    src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1"
+                    alt="Instructor del curso"
+                    width="250"
+                >
+                <figcaption>
+                    Ingeniero de software con experiencia en desarrollo web
+                    y formación técnica.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- Testimonios -->
+        <section id="testimonials">
+            <h2>Testimonios</h2>
+
+            <blockquote>
+                “El curso explica HTML de forma clara y estructurada.”
+                <cite>– Estudiante</cite>
+            </blockquote>
+
+            <blockquote>
+                “Ideal para entender cómo se construye una web desde cero.”
+                <cite>– Desarrollador junior</cite>
+            </blockquote>
+        </section>
+
+        <!-- Inscripción -->
+        <section id="enrollment">
+            <h2>Formulario de inscripción</h2>
+
+            <form action="" method="post">
+                <label for="name">Nombre completo</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="level">Nivel de experiencia</label>
+                <select id="level" name="level">
+                    <option value="beginner">Principiante</option>
+                    <option value="intermediate">Intermedio</option>
+                </select>
+
+                <button type="submit">Inscribirse</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="site-footer">
+
+        <address>
+            Contacto: contacto@cursohtml.com
+        </address>
+
+        <p>
+            © 2026 Curso de Desarrollo Web. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+</body>
+</html>
