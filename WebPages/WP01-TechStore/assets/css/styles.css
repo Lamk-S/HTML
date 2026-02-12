@@ -160,6 +160,98 @@ h2.no-margin {
     font-size: 18px;
 }
 
+/* Ofertas */
+
+.bg-gray {
+    background-color: #f3f3f3;
+}
+
+.seccion-ofertas {
+    height: 350px;
+    padding: 15px 80px;
+    display: flex;
+    place-content: space-around;
+}
+
+.oferta-ind {
+    height: 300px;
+    background-color: #ffffff;
+    max-width: 20%;
+    border-radius: 16px;
+    padding: 0px 10px;
+}
+
+.img-producto {
+    max-height: 150px;
+    width: -webkit-fill-available;
+    padding-top: 25px;
+}
+
+.txt-base-carousel-section--discount {
+    font-size: 11px;
+    color: #ffffff;
+    background-color: rgb(22, 185, 185);
+    border-radius: 6px;
+    padding: 0px 10px;    
+}
+
+.ml-1 {
+    margin-left: 4px;
+}
+
+.float-right {
+    display: flex;
+    float: right;
+}
+
+.mr-2 {
+    margin-right: 8px;
+}
+
+.mt-5 {
+    margin-top: 20px;
+}
+
+.txt-base-carousel-section-price {
+    font-size: 16px;
+    text-align: left;
+    color: black;
+    font-weight: 700;
+}
+
+.txt-base-carousel-section-price label {
+    font-size: 12px !important;
+}
+
+.txt-base-carousel-section-price--discount {
+    color: #ef9a9a;
+    text-decoration: line-through;
+}
+
+.button-small {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 4px 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+}
+
+.button-small:hover {
+    cursor: pointer;
+}
+
+.button--primary {
+    background-color: rgb(22, 185, 185);
+}
+
+.title-producto {
+    font-size: 16px;
+}
+
 /* Utilidades */
 
 .no-margin {
@@ -176,4 +268,8 @@ h2 {
 
 .d-flex {
     display: flex;
+}
+
+.centrar-texto {
+    text-align: center;
 }
