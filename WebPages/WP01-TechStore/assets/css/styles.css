@@ -69,10 +69,6 @@ ul li a {
     float: right;
 }
 
-.d-flex {
-    display: flex;
-}
-
 .link-header {
     margin: 0px 8px;
 }
@@ -125,4 +121,59 @@ ul li.link-header a {
 
 .copyright {
     color: #ffffff;
+}
+
+/* Portada */
+
+.Portada {
+    background:
+        linear-gradient(rgba(120,120,120,0.5), rgba(120,120,120,0.5)),
+        url(../img/banner.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0px 60px;
+    display: table;
+    width: 100%;
+}
+
+.headerTexto {
+    text-align: center;
+    color: black;
+    height: 100%;
+    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h2.no-margin {
+    font-size: 88px;
+}
+
+.border-title {
+    border-bottom: 4px solid rgb(22, 185, 185);
+    width: 15%;
+}
+
+.description-title {
+    font-size: 18px;
+}
+
+/* Utilidades */
+
+.no-margin {
+    margin: 0px;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.d-flex {
+    display: flex;
 }
