@@ -252,6 +252,40 @@ h2.no-margin {
     font-size: 16px;
 }
 
+/* Categorias */
+
+.img-categoria {
+    width: 200px;
+    height: 200px;
+    position: center center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.categorias-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 60px 80px;
+    justify-content: space-between;
+}
+
+.categoria-ind {
+    width: 100%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categoria-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 4px;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+}
+
 /* Utilidades */
 
 .no-margin {
@@ -272,4 +306,9 @@ h2 {
 
 .centrar-texto {
     text-align: center;
+}
+
+.contenedor {
+    width: min(90%, 1200px);
+    margin: 0 auto;
 }
