@@ -4,7 +4,7 @@ html {
 }
 
 *,
-*:beffore,
+*:before,
 *:after {
     box-sizing: inherit;
 }
@@ -13,9 +13,10 @@ body {
     margin: 0px;
 }
 
+/* Header */
+
 #pageLamkS #headerLamkS.fixed-header {
-    background: none;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 #headerLamkS {
@@ -83,4 +84,45 @@ ul li.link-header a {
 
 #header {
     height: 60px;
+}
+
+/* Foooter */
+
+.footerLamks {
+    padding: 40px 0;
+    background-color: rgb(22, 185, 185);
+    color: #4b4c4d;
+}
+
+.footerLamks .social {
+    text-align: center;
+}
+
+.footerLamks .social > a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    margin: 0 8px;
+    color: #ffffff;
+    opacity: 0.75;
+}
+
+.footerLamks .social > a:hover {
+    opacity: 0.9;
+}
+
+.footerLamks .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.copyright {
+    color: #ffffff;
 }
