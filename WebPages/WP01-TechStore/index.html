@@ -8,9 +8,9 @@
     <title>Lamk's Tech Store</title>
 </head>
 <body>
-    <div id="pageLamkS" style="padding-top: 60px;">
+    <div id="pageLamkS">
         <!-- Header -->
-        <div id="headerLamkS" class="fixed-header" style="margin-top: 0px;">
+        <div id="headerLamkS" class="fixed-header">
             <header id="header">
                 <div class="wrapper">
                     <div id="site-logo">
@@ -22,13 +22,13 @@
                         <nav>
                             <ul class="d-flex">
                                 <li class="link-header">
-                                    <a href="#">Categorias</a>
+                                    <a href="#Ofertas">Ofertas</a>
                                 </li>
                                 <li class="link-header">
-                                    <a href="#">Ofertas</a>
+                                    <a href="#Categorias">Categorias</a>
                                 </li>
                                 <li class="link-header">
-                                    <a href="#">Sugerencias</a>
+                                    <a href="#Sugerencias">Sugerencias</a>
                                 </li>
                             </ul>
                         </nav>
@@ -42,7 +42,7 @@
             <div class="headerTexto">
                 <h2 class="no-margin text-start">Lorem ipsum</h2>
                 <div class="no-margin border-title"></div>
-                <p class="no-margin text-start description-title" style="margin-top: 20px;">
+                <p class="no-margin text-start description-title part--1">
                     Integer elementum lacinia quam, vel tincidunt nisi iaculis et. Duis aliquet vel tellus a semper.
                 </p>
                 <p class="no-margin text-start description-title">
@@ -52,10 +52,9 @@
          </div>
 
         <!-- Ofertas del día -->
-        <main>
+        <main id="Ofertas">
             <h2 class="centrar-texto">Nuestras ofertas del día</h2>
-            <div class="bg-gray seccion-ofertas">
-
+            <div class="bg-soft-primary seccion-ofertas">
                 <!-- Componente GameSir G5 -->
                 <div class="oferta-ind">
                     <div>
@@ -169,92 +168,96 @@
         </main>
 
          <!-- Categorias -->
-        <section class="contenedor">
+        <section class="contenedor" id="Categorias">
             <h2 class="centrar-texto">Categorias</h2>
-            <div class="categorias-container">
-                <!-- Componente Categoria Gráficas -->
-                <div class="categoria-ind">
-                    <img class="img-categoria" src="./assets/img/Graficas.png" alt="Categoria Gráficas">
-                    <h4 class="categoria-title centrar-texto">Gráficas</h4>
-                </div>
+            <div class="categorias-section bg-soft-primary">
+                <div class="categorias-container">
+                    <!-- Componente Categoria Gráficas -->
+                    <div class="categoria-ind">
+                        <img class="img-categoria" src="./assets/img/Graficas.png" alt="Categoria Gráficas">
+                        <h4 class="categoria-title centrar-texto">Gráficas</h4>
+                    </div>
 
-                <!-- Componente Categoria Procesadores -->
-                <div class="categoria-ind">
-                    <img class="img-categoria" src="./assets/img/procesadores.png" alt="Categoria Procesadores">
-                    <h4 class="categoria-title centrar-texto">Procesadores</h4>
-                </div>
-                
-                <!-- Componente Categoria Cases -->
-                <div class="categoria-ind">
-                    <img class="img-categoria" src="./assets/img/Cases.png" alt="Categoria Cases">
-                    <h4 class="categoria-title centrar-texto">Cases</h4>
-                </div>
+                    <!-- Componente Categoria Procesadores -->
+                    <div class="categoria-ind">
+                        <img class="img-categoria" src="./assets/img/procesadores.png" alt="Categoria Procesadores">
+                        <h4 class="categoria-title centrar-texto">Procesadores</h4>
+                    </div>
+                    
+                    <!-- Componente Categoria Cases -->
+                    <div class="categoria-ind">
+                        <img class="img-categoria" src="./assets/img/Cases.png" alt="Categoria Cases">
+                        <h4 class="categoria-title centrar-texto">Cases</h4>
+                    </div>
 
-                <!-- Componente Categoria Monitores -->
-                <div class="categoria-ind">
-                    <img class="img-categoria" src="./assets/img/Monitores.png" alt="Categoria Monitores">
-                    <h4 class="categoria-title centrar-texto">Monitores</h4>
-                </div>
+                    <!-- Componente Categoria Monitores -->
+                    <div class="categoria-ind">
+                        <img class="img-categoria" src="./assets/img/Monitores.png" alt="Categoria Monitores">
+                        <h4 class="categoria-title centrar-texto">Monitores</h4>
+                    </div>
 
-                <!-- Componente Categoria Teclados -->
-                <div class="categoria-ind">
-                    <img class="img-categoria" src="./assets/img/Teclados.png" alt="Categoria Teclados">
-                    <h4 class="categoria-title centrar-texto">Teclados</h4>
-                </div>
+                    <!-- Componente Categoria Teclados -->
+                    <div class="categoria-ind">
+                        <img class="img-categoria" src="./assets/img/Teclados.png" alt="Categoria Teclados">
+                        <h4 class="categoria-title centrar-texto">Teclados</h4>
+                    </div>
 
-                <!-- Componente Categoria Fuentes de poder -->
-                <div class="categoria-ind">
-                    <img class="img-categoria" src="./assets/img/Fuente-poder.png" alt="Categoria Fuentes de poder">
-                    <h4 class="categoria-title centrar-texto">Fuentes de poder</h4>
-                </div>
+                    <!-- Componente Categoria Fuentes de poder -->
+                    <div class="categoria-ind">
+                        <img class="img-categoria" src="./assets/img/Fuente-poder.png" alt="Categoria Fuentes de poder">
+                        <h4 class="categoria-title centrar-texto">Fuentes de poder</h4>
+                    </div>
 
-                <!-- Componente Categoria SSDs -->
-                <div class="categoria-ind">
-                    <img class="img-categoria" src="./assets/img/SSD.png" alt="Categoria SSD">
-                    <h4 class="categoria-title centrar-texto">SSDs</h4>
-                </div>
+                    <!-- Componente Categoria SSDs -->
+                    <div class="categoria-ind">
+                        <img class="img-categoria" src="./assets/img/SSD.png" alt="Categoria SSD">
+                        <h4 class="categoria-title centrar-texto">SSDs</h4>
+                    </div>
 
-                <!-- Componente Categoria Sillas -->
-                <div class="categoria-ind">
-                    <img class="img-categoria" src="./assets/img/silla.png" alt="Categoria Sillas">
-                    <h4 class="categoria-title centrar-texto">Sillas</h4>
-                </div>
+                    <!-- Componente Categoria Sillas -->
+                    <div class="categoria-ind">
+                        <img class="img-categoria" src="./assets/img/silla.png" alt="Categoria Sillas">
+                        <h4 class="categoria-title centrar-texto">Sillas</h4>
+                    </div>
 
-                <!-- Componente Categoria Pasta térmica -->
-                <div class="categoria-ind">
-                    <img class="img-categoria" src="./assets/img/Pasta-termica.png" alt="Categoria Pasta térmica">
-                    <h4 class="categoria-title centrar-texto">Pasta térmica</h4>
-                </div>
+                    <!-- Componente Categoria Pasta térmica -->
+                    <div class="categoria-ind">
+                        <img class="img-categoria" src="./assets/img/Pasta-termica.png" alt="Categoria Pasta térmica">
+                        <h4 class="categoria-title centrar-texto">Pasta térmica</h4>
+                    </div>
 
-                <!-- Componente Categoria Fundas -->
-                <div class="categoria-ind">
-                    <img class="img-categoria" src="./assets/img/Fundas.png" alt="Categoria Fundas">
-                    <h4 class="categoria-title centrar-texto">Fundas</h4>
+                    <!-- Componente Categoria Fundas -->
+                    <div class="categoria-ind">
+                        <img class="img-categoria" src="./assets/img/Fundas.png" alt="Categoria Fundas">
+                        <h4 class="categoria-title centrar-texto">Fundas</h4>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Ayudanos a mejorar -->
-        <section class="contenedor">
-            <h3 class="centrar-texto">Ayudanos a mejorar</h3>
-            <div class="contanto-bg"></div>
-            <form class="formulario">
-                <div class="campo">
-                    <label class="campo-label" for="name">Nombre</label>
-                    <input type="text" class="campo-field" placeholder="Nombre completo" id="nombre">
-                </div>
-                <div class="campo">
-                    <label class="campo-label" for="asunto">Asunto</label>
-                    <input type="text" class="campo-field" placeholder="Asunto de recomendación" id="asunto">
-                </div>
-                <div class="campo">
-                    <label class="campo-label" for="mensaje">Detalle</label>
-                    <textarea type="text" class="campo-field campo-field--textarea" id="mensaje"></textarea>
-                </div>
-                <div class="campo">
-                    <input type="submit" value="Enviar" class="boton button--primary">
-                </div>
-            </form>
+        <section class="contacto-section" id="Sugerencias">
+            <h3 class="centrar-texto">Sugerencias</h3>
+            <div class="contacto-container bg-soft-primary">
+                <div class="contacto-bg"></div>
+                <form class="formulario">
+                    <div class="campo">
+                        <label class="campo-label" for="name">Nombre</label>
+                        <input type="text" class="campo-field" placeholder="Nombre completo" id="nombre">
+                    </div>
+                    <div class="campo">
+                        <label class="campo-label" for="asunto">Asunto</label>
+                        <input type="text" class="campo-field" placeholder="Asunto de recomendación" id="asunto">
+                    </div>
+                    <div class="campo">
+                        <label class="campo-label" for="mensaje">Detalle</label>
+                        <textarea type="text" class="campo-field campo-field--textarea" id="mensaje"></textarea>
+                    </div>
+                    <div class="campo">
+                        <input type="submit" value="Enviar" class="boton button--primary">
+                    </div>
+                </form>
+            </div>
         </section>
 
         <!-- Footer -->
