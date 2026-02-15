@@ -1,0 +1,24 @@
+.btn-lamks {
+    background-color: #6abce2;
+    border: 2px solid #6abce2;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.btn-lamks:hover {
+    background-color: #8dcfec;
+    color: #000000;
+    border: 2px solid #6abce2;
+}
+
+.bg-blue-lamks {
+    background-color: #6abce2;
+}
+
+.text-lamks-blue {
+    color: #235284;
+}
+
+.card {
+    border-radius: 12px;
+}
