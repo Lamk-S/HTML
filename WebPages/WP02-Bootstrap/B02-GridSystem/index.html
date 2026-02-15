@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grid System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+  <body>
+    <div class="container my-5">
+        <header class="mb-5 text-center">
+            <h1 class="display-4">Sistema de Grid en Bootstrap</h1>
+            <p class="lead">
+                Bootstrap utiliza un sistema de 12 columnas basado en <code>row</code> y <code>col</code>.
+                Permite crear diseños responsivos adaptables a diferentes tamaños de pantalla.
+            </p>
+        </header>
+
+        <!-- ===================== GRID BÁSICO ===================== -->
+        <section class="mb-5">
+            <h2 class="mb-4">Distribución Automática con <code>col</code></h2>
+
+            <div class="row">
+                <div class="col table-ind">Col</div>
+                <div class="col table-ind">Col</div>
+                <div class="col table-ind">Col</div>
+                <div class="col table-ind">Col</div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col table-ind">Col</div>
+                <div class="col table-ind">Col</div>
+            </div>
+        </section>
+
+        <!-- ===================== GRID CON TAMAÑOS FIJOS ===================== -->
+        <section class="mb-5">
+            <h2 class="mb-4">Columnas con Tamaño Específico</h2>
+
+            <div class="row">
+                <div class="col-3 table-ind">col-3</div>
+                <div class="col-6 table-ind">col-6</div>
+                <div class="col-3 table-ind">col-3</div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-5 table-ind">col-5</div>
+                <div class="col-2 table-ind">col-2</div>
+                <div class="col-5 table-ind">col-5</div>
+            </div>
+        </section>
+
+        <!-- ===================== GRID RESPONSIVO ===================== -->
+        <section class="mb-5">
+            <h2 class="mb-4">Columnas Responsivas</h2>
+            <p>
+                Las clases como <code>col-lg-4</code>, <code>col-md-6</code>,
+                <code>col-sm-3</code> permiten cambiar el tamaño según el breakpoint.
+            </p>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-3 col-6 table-ind">Col</div>
+                <div class="col-lg-4 col-md-6 col-sm-3 col-6 table-ind">Col</div>
+                <div class="col-lg-4 col-md-6 col-sm-3 col-6 table-ind">Col</div>
+            </div>
+        </section>
+
+        <!-- ===================== JUSTIFY CONTENT ===================== -->
+        <section class="mb-5">
+            <h2 class="mb-4">Alineación Horizontal con <code>justify-content-*</code></h2>
+
+            <div class="row justify-content-center mb-3">
+                <div class="col-3 table-ind">center</div>
+                <div class="col-3 table-ind">center</div>
+                <div class="col-3 table-ind">center</div>
+            </div>
+
+            <div class="row justify-content-around mb-3">
+                <div class="col-3 table-ind">around</div>
+                <div class="col-3 table-ind">around</div>
+                <div class="col-3 table-ind">around</div>
+            </div>
+
+            <div class="row justify-content-between mb-3">
+                <div class="col-3 table-ind">between</div>
+                <div class="col-3 table-ind">between</div>
+                <div class="col-3 table-ind">between</div>
+            </div>
+
+            <div class="row justify-content-end mb-3">
+                <div class="col-3 table-ind">end</div>
+                <div class="col-3 table-ind">end</div>
+                <div class="col-3 table-ind">end</div>
+            </div>
+
+            <div class="row justify-content-start">
+                <div class="col-3 table-ind">start</div>
+                <div class="col-3 table-ind">start</div>
+                <div class="col-3 table-ind">start</div>
+            </div>
+        </section>
+
+         <!-- ===================== IMÁGENES ===================== -->
+        <section class="mb-5">
+            <h1 class="display-5">Imágenes con Bootstrap</h1>
+            <p>
+                Clases útiles: <code>rounded</code>, <code>img-fluid</code>,
+                <code>mx-auto</code>, <code>d-block</code>.
+            </p>
+
+            <div class="row mt-4 text-center">
+                <div class="col-3">
+                    <img src="./assets/img/Poke_Ball.png" class="rounded img-fluid img-item" alt="Poke Ball">
+                    <h5 class="mt-2">Poke Ball</h5>
+                </div>
+                <div class="col-3">
+                    <img src="./assets/img/Super_Ball.png" class="rounded img-fluid img-item" alt="Super Ball">
+                    <h5 class="mt-2">Super Ball</h5>
+                </div>
+                <div class="col-3">
+                    <img src="./assets/img/Ultra_Ball.png" class="rounded img-fluid img-item" alt="Ultra Ball">
+                    <h5 class="mt-2">Ultra Ball</h5>
+                </div>
+                <div class="col-3">
+                    <img src="./assets/img/Master_Ball.png" class="rounded img-fluid img-item" alt="Master Ball">
+                    <h5 class="mt-2">Master Ball</h5>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CARRUSEL ===================== -->
+        <section>
+            <h1 class="display-5 mb-4">Componente Carousel</h1>
+
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/Poke_Ball.png" class="d-block w-100" alt="Poke Ball">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/Super_Ball.png" class="d-block w-100" alt="Super Ball">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/Ultra_Ball.png" class="d-block w-100" alt="Ultra Ball">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/Master_Ball.png" class="d-block w-100" alt="Master Ball">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

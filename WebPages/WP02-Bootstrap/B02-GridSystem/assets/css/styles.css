@@ -1,0 +1,17 @@
+.table-ind {
+    background-color: #f6f6f6;
+    height: 40px;
+    border: 0.5px solid #e1e1e1;
+    place-items: center;
+    place-content: center;
+    display: flex;
+}
+
+.img-item {
+    width: 250px;
+    cursor: pointer;
+}
+
+h5.text-center.mt-1 {
+    cursor: pointer;
+}
