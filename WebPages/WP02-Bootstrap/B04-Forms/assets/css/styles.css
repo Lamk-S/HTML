@@ -1,0 +1,20 @@
+.body {
+    background-color: #f3f3f3;
+}
+
+.form-lamks {
+    border: 1px solid #444;
+    padding: 20px 40px;
+}
+
+.btn-form-lamks {
+    background-color: #235284;
+    border-radius: #235284;
+    color: #ffffff;
+}
+
+.btn-form-lamks:hover {
+    background-color: #3271a5;
+    color: #ffffff;
+    border: 2px solid #235284;
+}
